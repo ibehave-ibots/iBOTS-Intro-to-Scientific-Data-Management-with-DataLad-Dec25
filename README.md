@@ -38,3 +38,15 @@ If you have trouble installing the environment on your machine you can run all n
 2. Creating a Dataset from Scratch
 3. Creating Siblings
 4. Running Commands and Pipelines
+
+## Avoiding Long Terminal Prompts
+When working in the terminal, the path to the current directory can get very long and cluter the screen.
+To avoid that you can temporarily disable the full file path by pasting the following snippet (depending on your shell and OS) into your terminal:
+
+| Shell | Temporary change to prompt > |
+| :-- | :--|
+| Bash | PS1="> " |
+| Zsh (mac) | PROMPT="> " |
+| CMD.exe | prompt $G |
+| PowerShell | function prompt { "> " } |
+
